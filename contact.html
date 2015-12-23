@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>联系我们</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!--web-font-->
+<!--<link href='http://fonts.useso.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+<!--//web-font-->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Adornment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.63321.js"></script>
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>					
+			</div>
+			<!--top-nav-->
+			<div class="top-nav cl-effect-11">
+				<span class="menu-icon"><img src="images/menu-icon.png" alt=""/></span>		
+				<ul class="nav1">
+					<li><a href="index.html" data-hover="Home">首页</a></li>
+					<li><a href="about.html" data-hover="About">关于我们</a></li>
+					<li><a href="gallery.html" data-hover="Gallery">产品中心</a></li>
+					<li><a href="blog.html" data-hover="Blog">公司博客</a></li>
+					<li><a href="contact.html" data-hover="Contact"  class="active">联系我们</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+				   $( "span.menu-icon" ).click(function() {
+					 $( "ul.nav1" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<!--//top-nav-->
+			<div class="clearfix"> </div>
+		</div>	
+	</div>
+	<!--//header-->
+	<!--contact-->
+	<div class="contact">
+		<div class="container">
+			<h3>联系我们</h3>
+			<div class="map">
+				<iframe src="baidumap.html" frameBorder=0 scrolling=no></iframe> 
+			</div>					
+			<div class="contact-grids">
+				<div class="col-md-4 address">
+					<h3>联系信息</h3>
+					<p class="cnt-p">联系信息联系信息联系信息联系信息联系信息联系信息联系信息联系信息</p>
+					<p>深圳市宝安区西乡街道</p>
+					<p>三围同富裕工业园A2栋5楼</p>
+					<p>电话 : 0755-36320676</p>
+					<p>传真 : 0755-29798478</p>
+					<p>邮箱 : <a href="mailto:example@mail.com">mail@example.com</a></p>
+				</div>
+				<div class="col-md-8 contact-form">
+					<h3>联系内容</h3>
+					<form>
+						<div class="col-md-6 contact-grids">
+							<input type="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+							<input type="email" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+							<input type="text" value="电话" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+						</div>
+						<div class="col-md-6 contact-grids">
+							<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">请输入内容...</textarea>							
+						</div>
+						<div class="clearfix"> </div>
+						<input type="submit" value="提交" >
+					</form>
+				</div>
+				<div class="clearfix"> </div>	
+			</div>	
+		</div>
+	</div>
+	<!--//contact-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>Copyright &copy; 2015.深圳市森姆泵业科技有限公司 All rights</p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"> </script>
+</body>
+</html>
